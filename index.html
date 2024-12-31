@@ -3,380 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio - Harsh Singh</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="top">
-      <div class="heading">
-        <h1>Harsh</h1>
+    <nav class="navbar">
+      <div class="logo">Harsh</div>
+      <div class="nav-links">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </div>
-      <div class="link">
-        <a href="#">Home</a>
-        <a href="#expertise">Skills</a>
-        <a href="#project-class">Projects</a>
-        <a href="#contact">Contact me</a>
+      <div class="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-    </div>
-    
+    </nav>
 
-    <main>
-      <div class="home-link">
-        <div class="home">
-          <div class="intro">
-            <p class="first">Hey there!, I'm-</p>
-            <h2 class="name">Harsh Singh.</h2>
-            <p class="about">
-              <span class="eng">Software Engineer</span>. A self-taught
-              developer with an interest in Computer Science.
-            </p>
-            <div class="box">
-              <p>🚀 Currently specializing in Frontend</p>
-              <p>⚡Budding <span>Full stack Developer</span></p>
-            </div>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="greeting">Hey there! I'm-</p>
+          <h1 class="name">Harsh Singh</h1>
+          <p class="title">Software Engineer</p>
+          <p class="description">
+            A self-taught developer with an interest in Computer Science.
+          </p>
+          <div class="highlights">
+            <p>🚀 Currently specializing in Frontend</p>
+            <p>⚡Budding <span>Full Stack Developer</span></p>
           </div>
-          <div class="image-coding"><img src="coding.avif" alt="" /></div>
-        </div>
-        <div class="buttons-links">
-          <div class="Github button1">
-            <!-- Add GitHub logo -->
-            <a href="">
-              <img src="githhub.png" alt="GitHub" style="width: 20px; height: 20px; margin-right: 8px;">GitHub
+          <div class="social-links">
+            <a href="#" class="social-btn github">
+              <img src="./image/githhub.png" alt="GitHub" />
+              GitHub
             </a>
-          </div>
-          <div class="Linkedin button1">
-            <!-- Add LinkedIn logo -->
-            <a href="">
-              <img src="linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px; margin-right: 8px;">
+            <a href="#" class="social-btn linkedin">
+              <img src="./image/linkedin.png" alt="LinkedIn" />
               LinkedIn
             </a>
-          </div>
-          <div class="Email button1">
-            <!-- Add Email logo -->
-            <a href="">
-              <img src="email.png" alt="Email" style="width: 20px; height: 20px; margin-right: 8px;">
+            <a href="#" class="social-btn email">
+              <img src="./image/email.png" alt="Email" />
               Email
             </a>
           </div>
         </div>
+        <div class="hero-image">
+          <img
+            src="./image/coding.avif"
+            alt="Coding illustration"
+            class="floating"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="section-title">My Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+          <h3>Backend Development</h3>
+          <ul>
+            <li><strong>Languages:</strong> Python, Java</li>
+            <li>
+              <strong>Frameworks:</strong> Node.js, Express, Spring Boot, Django
+            </li>
+            <li>
+              <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Firebase
+            </li>
+            <li>
+              <strong>Tools:</strong> REST APIs, GraphQL, JWT, Microservices
+            </li>
+          </ul>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Frontend Development</h3>
+          <ul>
+            <li>
+              <strong>Languages:</strong> JavaScript, TypeScript, HTML, CSS
+            </li>
+            <li>
+              <strong>Frameworks:</strong> React, Angular, Flutter, Vue.js
+            </li>
+            <li>
+              <strong>Tools:</strong> Redux, Tailwind CSS, Bootstrap, Webpack
+            </li>
+            <li>
+              <strong>Skills:</strong> Responsive Design, Cross-Browser
+              Compatibility
+            </li>
+          </ul>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Data Structures & Algorithms</h3>
+          <ul>
+            <li>
+              <strong>Problem Solving:</strong> DSA, Algorithm Optimization
+            </li>
+            <li>
+              <strong>Concepts:</strong> Arrays, Linked Lists, Trees, Graphs
+            </li>
+            <li>
+              <strong>Advanced:</strong> Dynamic Programming, Greedy Algorithms
+            </li>
+            <li><strong>Platforms:</strong> LeetCode, HackerRank</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+                <img src="./image/Todo.png" alt="Todo List" />
+            </div>
+            <div class="project-content">
+                <h3>Todo List</h3>
+                <p>
+                    A simple and intuitive Todo List application to manage tasks efficiently with features like adding, editing, and deleting tasks.
+                </p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
         
-      <!-- My Expertise-->
-      <div id="expertise">
-        <div class="heading"><h2>My Expertise</h2></div>
-        <div class="expertise-content">
-          <div class="skills">
-            <div class="work">
-              <div class="t">
-                <div class="content">
-            
-                  <h2>Backend Development</h2>
-                </div>
-                <div class="highlight">
-                  <ul>
-                    <li><strong>Languages:</strong> Python, Java</li>
-                    <li>
-                      <strong>Frameworks:</strong> Node.js, Express, Spring
-                      Boot, Django
-                    </li>
-                    <li>
-                      <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB,
-                      Firebase
-                    </li>
-                    <li>
-                      <strong>Tools/Technologies:</strong> REST APIs, GraphQL,
-                      Authentication/Authorization (JWT, OAuth), Microservices
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="work">
-              <div class="t">
-                <div class="content">
-            
-                  <h2>Frontend</h2>
-                </div>
-                <div class="highlight">
-                  <ul>
-                    <li>
-                      <strong>Languages:</strong> JavaScript, TypeScript, HTML,
-                      CSS
-                    </li>
-                    <li>
-                      <strong>Frameworks/Libraries:</strong> React, Angular,
-                      Flutter, Vue.js
-                    </li>
-                    <li>
-                      <strong>Tools/Technologies:</strong> Redux, Tailwind CSS,
-                      Bootstrap, Webpack, Babel
-                    </li>
-                    <li>
-                      <strong>Specialized Skills:</strong> Responsive Design,
-                      Cross-Browser
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="work">
-              <div class="t">
-                <div class="content">
-                 
-                  <h2>Data Structures and Algorithms</h2>
-                </div>
-                <div class="highlight">
-                  <ul>
-                    <li>
-                      <strong>Expertise:</strong> Problem-solving using DSA,
-                      Algorithm Optimization, Competitive Programming
-                    </li>
-                    <li>
-                      <strong>Concepts:</strong> Arrays, Linked Lists, Trees,
-                      Graphs, Dynamic Programming, Greedy Algorithms
-                    </li>
-                    <li><strong>Platforms:</strong> LeetCode, HackerRank</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="./image/TicTacToe.png" alt="TicTacToe" />
           </div>
-          <!-- <div class="code">
-            <img src="imagehtml.webp" alt="" />
-          </div> -->
-          <!-- <img src="imagehtml.webp" alt="" class="code" /> -->
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <div id="project-class">
-        <div class="project-heading"><h2>Projects</h2></div>
-        <div class="projects">
-          <div class="box1">
-            <div class="snap">
-              <img src="bookmy.png" alt="" />
-              <h3>BookMyShow Clone</h3>
-            </div>
-            <div class="description">
-              <p>
-                This project is a frontend clone of the popular movie booking
-                platform, BookMyShow, created using HTML and CSS. It replicates
-                the basic structure and design of the website, providing a
-                simple and visually appealing layout for users to browse movies
-                and events.
-              </p>
-
-              <h3>Features:</h3>
-              <ul>
-                <li>
-                  <strong>Home Page:</strong> Displays a hero section with
-                  trending movies, an eye-catching layout, and call-to-action
-                  buttons.
-                </li>
-                <li>
-                  <strong>Movie List:</strong> A grid-based layout showcasing
-                  various movie posters, movie names, and basic details like
-                  genres and ratings.
-                </li>
-                <li>
-                  <strong>Responsive Design:</strong> The layout is
-                  mobile-friendly, ensuring a smooth user experience on
-                  different screen sizes, utilizing media queries and CSS
-                  Grid/Flexbox for responsiveness.
-                </li>
-                <li>
-                  <strong>Navigation Bar:</strong> Easy-to-use navigation for
-                  seamless browsing between different pages such as Movies,
-                  Events, and Contact.
-                </li>
-                <li>
-                  <strong>Footer Section:</strong> Contains copyright
-                  information and links to external resources.
-                </li>
-              </ul>
-
-              <h3>Technologies Used:</h3>
-              <ul>
-                <li>HTML for structure and content</li>
-                <li>CSS for styling and layout</li>
-                <li>Flexbox and Grid for responsive design</li>
-              </ul>
-            </div>
-          </div>
-          <div class="box1">
-            <div class="snap">
-              <img src="solar.png" alt="" />
-              <h3>Solar Planet</h3>
-            </div>
-            <div class="description">
-              <p>
-                This project showcases a simple and interactive solar system
-                simulation built using HTML and CSS. It features a series of
-                planets orbiting a central sun, with each planet styled and
-                animated to move around the sun in a circular path.
-              </p>
-
-              <h3>Key Features:</h3>
-              <ul>
-                <li>Interactive animation of planets orbiting a sun.</li>
-                <li>
-                  Each planet has a unique color and size representing different
-                  celestial bodies.
-                </li>
-                <li>
-                  CSS animations are used to make the planets rotate around the
-                  sun.
-                </li>
-                <li>
-                  Responsive design to ensure the layout adjusts to different
-                  screen sizes.
-                </li>
-              </ul>
-
-              <h3>Technologies Used:</h3>
-              <ul>
-                <li>HTML: Structure of the solar system and planets.</li>
-                <li>CSS: Styling, layout, and animation of planets and sun.</li>
-              </ul>
-
-              <h3>How It Works:</h3>
-              <p>
-                The planets are represented using <code>div</code> elements with
-                circular shapes achieved through the
-                <code>border-radius</code> property. CSS animations are applied
-                to create the effect of planets orbiting the sun. The planets
-                move in a circular path using <code>rotate()</code> and
-                <code>translate()</code> within the CSS keyframes animation.
-              </p>
-            </div>
-          </div>
-          <div class="box1">
-            <div class="snap">
-              <img src="Learn.png" alt="" />
-              <h3>Welcome to LearnX60</h3>
-            </div>
-            <div class="description">
-              <p></p>
-                LearnX60 is an educational website designed to teach beginners
-                and aspiring web developers the basics of web development. The
-                platform focuses on helping users understand the core concepts
-                of HTML and CSS through simple explanations, interactive
-                examples, and practical exercises.
-              </p>
-
-              <h3>Key Features:</h3>
-              <ul>
-                <li>
-                  Comprehensive lessons on HTML and CSS, starting from the
-                  fundamentals.
-                </li>
-                <li>
-                  Interactive examples and code snippets for hands-on learning.
-                </li>
-                <li>Well-structured content for a clear learning path.</li>
-                <li>
-                  Responsive design, ensuring a great learning experience on all
-                  devices.
-                </li>
-              </ul>
-
-              <h3>Technologies Used:</h3>
-              <ul>
-                <li>
-                  <strong>HTML:</strong> Used to structure the content of the
-                  website.
-                </li>
-                <li>
-                  <strong>CSS:</strong> Used to style the layout and create a
-                  visually appealing user interface.
-                </li>
-              </ul>
-
-              <h3>Learning Path:</h3>
-              <p>
-                LearnX60 offers a variety of tutorials and resources that cover
-                the key topics in HTML and CSS. From creating basic web pages to
-                styling them with advanced techniques, this website provides you
-                with all the knowledge needed to build responsive, well-designed
-                websites.
-              </p>
-
-              <h3>Why Choose LearnX60?</h3>
-              <ul>
-                <li>Free access to easy-to-follow lessons and tutorials.</li>
-                <li>
-                  Real-world examples to apply what you learn immediately.
-                </li>
-                <li>
-                  Learn at your own pace, with content accessible anytime,
-                  anywhere.
-                </li>
-              </ul>
-
-              <h3>Get Started Today!</h3>
+          <div class="project-content">
+            <h3>Tic Tac Toe</h3>
+            <p>
+              A classic Tic Tac Toe game with a sleek interface and player vs
+              player gameplay options.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- contact me -->
-      <div id="contact">
-        <div class="contact-heading">
-          <h2>Contact Me</h2>
-          <p>Feel free to get in touch with me!</p>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image">
+                <img src="./image/Astrology.png" alt="AstrologyFrontend" />
+            </div>
+            <div class="project-content">
+                <h3>Astrology & Compliment Generator</h3>
+                <p>
+                    A JavaScript-based application that generates personalized astrology-based compliments, recommendations, and future predictions, enhanced with visually appealing animated star effects.
+                </p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS </span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
         </div>
-
-        <form id="contact-form" action="YOUR_SERVER_URL" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Enter your name"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Enter your email"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Enter the subject"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Your message..."
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+        
       </div>
-    </main>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-subtitle">Feel free to get in touch with me!</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
 
     <footer>
-      <p>Designed and Developed by Harsh.</p>
-      <p>Built with <span>HTML</span> & <span>CSS</span>. Hosted on Github Pages.</p>
+      <p>Designed and Developed by Harsh</p>
+      <p>
+        Built with <span>HTML</span>, <span>CSS</span> & <span>JavaScript</span>
+      </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
